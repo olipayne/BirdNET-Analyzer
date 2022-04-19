@@ -23,5 +23,6 @@ jobs:
         with:
           push: true # Will only build if this is not here
           tags: |
-            ghcr.io/${{ github.repository }}:${{ github.ref }}
-            ghcr.io/${{ github.repository }}:latest
+            - ${{ github.repository_owner }}/${{ github.repository_name }}:${{ github.ref }}
+            - ${{ github.repository_owner }}/${{ github.repository_name }}:latest
+            
