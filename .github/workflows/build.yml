@@ -22,6 +22,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true # Will only build if this is not here
-          tags: |
-            ${{ github.repository_owner }}/${{ github.repository_name }}:latest
+          tags: latest
             
