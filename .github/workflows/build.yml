@@ -23,6 +23,6 @@ jobs:
         with:
           push: true # Will only build if this is not here
           tags: |
-            - ${{ github.repository_owner }}/${{ github.repository_name }}:${{ github.ref }}
-            - ${{ github.repository_owner }}/${{ github.repository_name }}:latest
+            ${{ github.repository_owner }}/${{ github.repository_name }}:${{ github.ref }}
+            ${{ github.repository_owner }}/${{ github.repository_name }}:latest
             
